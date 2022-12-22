@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% csrf_token %}
+<form class="base_form" action="{% url 'find_people' %}" , method="GET">
+    <h2>Поиск человека:</h2>
+    
+    <p>Имя : <input name="first_name" type="search" label="Имя" placeholder="Введите имя..."></p>
+    <p>Фамилия : <input name="last_name" type="search" label="Имя" placeholder="Введите фамилию..."></p>
+    <p>Отчество : <input name="patronymic" type="search" label="Имя" placeholder="Введите отчество..."></p>
+    <p>Город : <input name="city" type="search" label="Имя" placeholder="Введите город..."></p>
+
+    <button type="submit">Найти</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Найденная информация по товарам:</h2>
+    <hr>
+    <div class="container">
+        {% if object_list %}
+            {% for item in object_list %}
+            <div class="goods-card">
+                <div class="title-info">
+                    <p class="label">Наименование: </p>
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="price-info">
+                    <p class="label">Цена: </p>
+                    <p>{{item.price}} руб.</p>
+                </div>
+                <div class="quantity-info">
+                    <p class="label">На складе: </p>
+                    <p>{{item.quantity}} шт.</p>
+                </div>
+                <div class="category-info">
+                    <p class="label">Категория: </p>
+                    <p>{{item.category.title}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+        <h2>Увы, но ничего не удалось найти..</h2>
+        {% endif %}
+    </div>
+
+{% endblock content %}

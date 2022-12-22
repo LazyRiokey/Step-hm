@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Poker Game</title>
+</head>
+
+<body>
+    <h1>Simple Poker Game</h1>
+    <div class="div_main">
+        <div class="div_column ">
+            <div class="div_player">
+                <span>Player 1:</span>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">2</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">9</span>
+                </p>
+            </div>
+            <hr class="hr_players">
+            <p class="player_combination">
+                Pair
+            </p>
+            <div class="div_player">
+                <span>Player 2:</span>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">3</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">8</span>
+                </p>
+            </div>
+            <hr class="hr_players">
+            <p class="player_combination">
+                Straight
+            </p>
+            <div class="div_player">
+                <span>Player 3:</span>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">4</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">4</span>
+                </p>
+            </div>
+            <hr class="hr_players">
+            <p class="player_combination">
+                Three of a Kind
+            </p>
+            <div class="div_player">
+                <span>Player 4:</span>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">A</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">K</span>
+                </p>
+            </div>
+            <hr class="hr_players">
+            <p class="player_combination">
+                High Card
+            </p>
+        </div>
+        <div class="div_column ">
+            <div class="div_player">
+                <span>Dealer :</span>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">4</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">7</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">5</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">9</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">6</span>
+                </p>
+            </div>
+        </div>
+        <div class="div_column ">
+            <div class="div_player">
+                <span>Combinations :</span>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">A</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">K</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">Q</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">J</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">10</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Royal Flush
+            </p>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">6</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">7</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">9</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">10</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Straight Flush
+            </p>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">9</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">9</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">9</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">9</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">A</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Four of a Kind
+            </p>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">A</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">A</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">A</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">7</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">7</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Full House
+            </p>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">3</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">6</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">10</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">K</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Flush
+            </p>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">7</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">9</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">10</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">J</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Straight
+            </p>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">J</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">5</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Three of a Kind
+            </p>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">7</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">7</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">Q</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Two Pair
+            </p>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">5</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">5</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">J</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">10</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">3</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                Pair
+            </p>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">K</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="clubs">2</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="black_numbers">
+                    <span class="spades">8</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="diamonds">J</span>
+                </p>
+            </div>
+            <div class="div_card">
+                <p class="red_numbers">
+                    <span class="hearts">6</span>
+                </p>
+            </div>
+            <hr class="hr_combinations">
+            <p class="player_combination">
+                High Card
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

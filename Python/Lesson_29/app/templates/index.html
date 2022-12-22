@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Main Page{% endblock %}
+
+{% block main %}
+
+<form method="post">
+    <input type="text" , name="title" , id="title" , class="from_controll">
+    <input type="text" , name="cost" , id="cost" , class="from_controll">
+    <textarea name="info" id="info" class="from_controll"></textarea>
+    <input type="submit" class="from_controll" value="Отправить">
+</form>
+
+{% endblock %}

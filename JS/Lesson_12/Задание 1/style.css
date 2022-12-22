@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    background-color: #202124;
+}
+
+h1, span, input, label {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+h1, input, label {
+    color: white;
+}
+
+.container-1 {
+    display: inline-block;
+    width: 600px;
+    height: 800px;
+    background: url(res/background.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+
+#eight-ball {
+    width: 600px;
+    height: 600px;
+    background: url(res/magic_eight_ball.png);
+    background-size: cover;
+}
+
+.div-img-animation {
+    animation-name: vibrate-fast;
+    animation-duration: 1s;
+}
+
+@keyframes vibrate-fast {
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+    10% {
+        -webkit-transform: translate(-2px,-2px);
+        transform: translate(-2px,-2px);
+    }
+    20% {
+        -webkit-transform: translate(2px,-2px);
+        transform: translate(2px,-2px);
+    }
+    30% {
+        -webkit-transform: translate(-2px,2px);
+        transform: translate(-2px,2px);
+    }
+    40% {
+        -webkit-transform: translate(2px,2px);
+        transform: translate(2px,2px);
+    }
+    50% {
+        -webkit-transform: translate(-2px,-2px);
+        transform: translate(-2px,-2px);
+    }
+    60% {
+        -webkit-transform: translate(2px,-2px);
+        transform: translate(2px,-2px);
+    }
+    70% {
+        -webkit-transform: translate(-2px,2px);
+        transform: translate(-2px,2px);
+    }
+    80% {
+        -webkit-transform: translate(-2px,-2px);
+        transform: translate(-2px,-2px);
+    }
+    90% {
+        -webkit-transform: translate(2px,-2px);
+        transform: translate(2px,-2px);
+    }
+    100% {
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
+
+#text-focus {
+    display: block;
+    position: relative;
+    top: -350px;
+    left: 240px;
+    width: 130px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(44, 127, 196);
+    text-shadow: 
+        0 0 10px blue,
+        0 0 20px blue,
+        0 0 30px blue,
+        0 0 40px blue;
+    cursor: default;
+}
+
+.text-focus-animation {
+    animation-name: text-focus-in;
+    animation-duration: 1s;
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+input, label {
+    font-size: 20px;
+}
+
+input[type="submit"] {
+    position: relative;
+    left: 240px;
+    top: -55px;
+    height: 60px;
+    width: 120px;
+    border-color: #3498db;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: .2s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+
+label {
+    position: relative;
+    top: -110px;
+    left: -58px;
+}

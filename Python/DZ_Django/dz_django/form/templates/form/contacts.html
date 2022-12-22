@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <h1>Все карточки контактов</h1>
+
+    {% for item in contacts %}
+        <div class="contact_card">
+            <h2>Карточка {{item.first_name}}</h2>
+            <p class="first_name">Имя: {{item.first_name}}</p>
+            <p class="last_name">Фамилия: {{item.last_name}}</p>
+            <p class="phone_number">Номер телефона: {{item.phone_number}}</p>
+            <p class="company_name">Компания: {{item.company}}</p>
+            <p class="some_information">Информация: {{item.info}}</p>
+        </div>
+
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+    background-attachment:fixed;
+}
+
+h1 {
+    text-align: center;
+}
+
+.position {
+    border-radius: 2em;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.main_ol {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: rgba(233, 82, 208, 0.425);
+    list-style-position: inside;
+}
+
+#main li {
+    border: 1px;
+    border-radius: 8px;
+    padding-top: 3px;
+    margin-top: 8px;
+    background-color: rgba(134, 46, 120, 0.63);
+    text-indent: 10px;
+}
+
+span {
+    background-color: rgba(134, 46, 120, 0.63);
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 0px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+ol {
+    padding-bottom: 10px;
+}
+
+#main li {
+    list-style-image: url('source/book.png');
+}
+
+#main ol>li {
+    width: 375px;
+    list-style-image: url('source/author.png');
+}
+
+#main ol>li>span {
+    padding: 12px 15px 0px 15px;
+}

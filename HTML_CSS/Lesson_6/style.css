@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: radial-gradient(circle, #abb3c0, #adbfc6, #b4c9c8, #c3d2c9, #d6dacc);
+}
+
+h1, h2, h3, hr {
+    clear: both;
+    text-align: center;
+    font-weight: 900;
+}
+
+figure {
+    float: left;
+    /* Хоть изображение в блок и так идеально поместилось
+    без указания размеров, решил на всякий случай оставить.
+     */
+    width: 128px;
+    height: auto;
+    text-align: center;
+    margin: 20px;
+    padding: 30px 15px 15px 15px;
+    border: 1px rgb(138, 137, 137);
+    border-radius: 30px;
+    opacity: 1;
+    box-shadow: 0px 0px 8px 1px;
+    cursor: pointer;
+}
+
+figcaption {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+figure:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+hr {
+    margin-left: 18px;
+    margin-right: 20px;
+}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<form class="base-form" action="{% url 'add_restraunt' %}" , method="POST">
+        {% csrf_token %}
+        <h2>Добавить ресторан</h2>
+        <p type="Название рестарана:">{{form.title}}</p>
+        <p type="Специализация:">{{form.specialization}}</p>
+        <p type="Адрес:">{{form.address}}</p>
+        <p type="Сайт:">{{form.site}}</p>
+        <p type="Контакты:">{{form.contacts}}</p>
+        <button>Добавить</button>
+</form>
+
+{% endblock body %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+    
+    <form class="base_form" action="{% url 'add_critique' %}" , method="post">
+        {% csrf_token %}
+        <h2>Отзыв о книге:</h2>
+
+        {{ form.as_p }}
+
+
+        <button type="submit">Добавить</button>
+
+    </form>
+
+{% endblock %}
+
+{% block content %}
+    <hr>
+    <div class="container">
+    {% for item in review %}
+        <div class="review-info">
+            <p>Ник: {{item.nickname}}</p>
+            <p>Рейтинг: {{item.rating}}</p>
+            <p>Рецензия: {{item.review}}</p>
+            {% if item.spoilers == True %}
+                <p>Сподержит спойлеры? : Да</p>
+            {% else %}
+                <p>Сподержит спойлеры? : Нет</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}

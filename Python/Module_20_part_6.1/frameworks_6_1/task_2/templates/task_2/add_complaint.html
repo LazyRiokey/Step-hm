@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<form class="complaint-base-form" action="{% url 'ComplaintsView' %}" , method="post">
+    {% csrf_token %}
+    <h2>Пожаловаться на товар:</h2>
+
+    {{ form.as_p }}
+
+
+    <button type="submit">Отправить</button>
+
+</form>
+
+{% endblock body %}

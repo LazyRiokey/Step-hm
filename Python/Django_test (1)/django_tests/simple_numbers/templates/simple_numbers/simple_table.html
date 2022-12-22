@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h2>Таблица простых чисел в диапазоне {{start_range}} - {{end_range}}</h2>
+<div class="flex-container">
+    {% for item in prime_list %}
+    <div class="prime-table">
+        <p>{{item}}</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock%}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #202124;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h1, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+#box {
+    width: 100px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #2b2b2b;
+    box-shadow: 0px 0px 10px 5px rgb(0 0 0 / 30%);
+    border-radius: 15px;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    margin: 35px 10px 10px 10px;
+    background-image: radial-gradient(circle, #ffffff, #dddddd, #bbbbbb, #9b9b9b, #7c7c7c);
+    border-radius: 90px;
+    float: left;
+    transition: .3s;
+}
+
+input[type="button"] {
+    display: block;
+    font-weight: bold;
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border: 0px;
+    border-radius: 50%;
+    background-color: rgb(207, 207, 207);
+    box-shadow: inset 0px 0px 10px 6px rgba(0, 0, 0, .3);
+    transition: .3s;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background-color: rgb(175, 174, 174);
+}
+
+.red {
+    background-image: radial-gradient(circle, #ff0000, #df2221, #bd3131, #9a3a3a, #743f3f);
+    box-Shadow: 0px 0px 5px 5px #db2323;
+}
+
+.yellow {
+    background-image: radial-gradient(circle, #f4ff00, #daeb24, #c3d732, #acc33b, #98af40);
+    box-Shadow: 0px 0px 5px 5px #ddd941;
+}
+
+.green {
+    background-image: radial-gradient(circle, #43ff00, #48e920, #4cd42d, #4dbf35, #4eaa3a);
+    box-Shadow: 0px 0px 5px 5px #74dd41;
+}

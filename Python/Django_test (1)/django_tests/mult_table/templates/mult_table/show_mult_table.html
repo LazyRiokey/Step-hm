@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h2>Таблица умножения в диапазоне {{start_range}} - {{end_range}}</h2>
+<div class="flex-mult-container">
+    {% for item in mult_table %}
+    <div class="mult-table-container">
+        <p>{{item}}</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock%}

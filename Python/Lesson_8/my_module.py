@@ -1,0 +1,1 @@
+my_str = 'Hello from my_module'

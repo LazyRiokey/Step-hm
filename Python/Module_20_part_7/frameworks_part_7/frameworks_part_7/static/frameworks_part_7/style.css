@@ -1,0 +1,150 @@
+body {
+    background-image: radial-gradient(circle, #abb3c0, #adbfc6, #b4c9c8, #c3d2c9, #d6dacc);
+    font-family: Calibri;
+    margin: 10px;
+}
+
+.menu {
+    margin-left: 5px;
+}
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    color: #337AB7;
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.menu a::before,
+.menu a::after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+    left: -4px;
+    top: 0;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-style: solid;
+    border-color: #337AB7;
+    box-sizing: border-box;
+}
+
+.menu a::before {
+    border-width: 1px 0 1px 0;
+    transform: scaleX(0);
+}
+
+.menu a::after {
+    border-width: 0 1px 0 1px;
+    transform: scaleY(0);
+}
+
+.menu a:hover::before,
+.menu a:hover::after {
+    transform: scale(1, 1);
+}
+
+.errorlist {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.restraunt-card {
+    background: linear-gradient(45deg, #d13881, #ed8f6b, #e8dca4);
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.restraunt-card h2, h3 {
+    text-align: center;
+}
+
+.restraunt-card div {
+    margin: 5px;
+}
+
+.restraunt-card p {
+    display: inline;
+}
+
+.label {
+    margin: 5px 5px;
+    font-weight: bold;
+}
+
+.base-form {
+    width: 380px;
+    height: 560px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: 10px 0px 0px 10px ;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative
+}
+
+.base-form h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 260px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2
+}
+
+input:focus, select:focus {
+    border-bottom: 2px solid #78788c
+}
+
+.base-form p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a
+}
+
+button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}
+
+button:hover {
+    background: #78788c;
+    color: #fff
+}

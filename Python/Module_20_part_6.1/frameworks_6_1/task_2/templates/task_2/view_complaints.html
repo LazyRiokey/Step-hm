@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Список жалоб клиентов:</h2>
+    <hr>
+    <div class="container">
+        {% for item in object_list %}
+        <div class="complaint-card">
+            <div class="last-name-info">
+                <p class="label">Фамилия: </p>
+                <p>{{item.last_name}}</p>
+            </div>
+            <div class="first-name-info">
+                <p class="label">Имя: </p>
+                <p>{{item.first_name}}</p>
+            </div>
+            <div class="mail-info">
+                <p class="label">E-mail: </p>
+                <p>{{item.e_mail}}</p>
+            </div>
+            <div class="contacts-info">
+                <p class="label">Номер телефона: </p>
+                <p>{{item.contacts}}</p>
+            </div>
+            <div class="product-name-info">
+                <p class="label">Название товара: </p>
+                <p>{{item.product_name}}</p>
+            </div>
+            <div class="purchase-date-info">
+                <p class="label">Дата покупки: </p>
+                <p>{{item.purchase_date}}</p>
+            </div>
+            <div class="problem-description-info">
+                <p class="label">Описание проблемы: </p>
+                <p>{{item.problem_description}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: radial-gradient(circle, #abb3c0, #adbfc6, #b4c9c8, #c3d2c9, #d6dacc);
+}
+
+form {             
+    background-image: url(src/background.jpg);
+    background-size: cover; 
+    width: 500px;
+    height: 350px;
+    margin: 15% auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px 0px;
+    overflow: hidden;
+}
+
+div {
+    display: inline-block;
+    left: -40px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 30px 45px 10px;
+}
+
+div p {
+    font-family: 'IBM Plex Serif', serif;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: fit-content;
+    color: white;
+    font-size: 14px;
+    margin: 15px 0px 0px 30px;
+}
+
+input {
+    display: block;
+    height: 30px;
+    border: 0px;
+    padding-left: 15px;
+    margin: 10px 0px 0px 30px;
+    border-bottom: 1px solid black;
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    width: 280px;
+}
+
+label[for="secret_key"], 
+input[type="password"] {
+    display: initial;
+    position: relative;
+}
+
+label[for="secret_key"] {
+    top: -31.5px;
+    left: 5px;
+}
+
+input[type="password"] {
+    width: 60px;
+    left: -103px;
+}
+
+input[type="month"],
+input[type="number"] {
+    display: inline-block;
+    width: 60px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+figure img {
+    position: relative;
+    left: 290px;
+    top: -220px;
+    width: 256px;
+    height: 256px;
+}
+
+input[type="submit"] {
+    display: none;
+    opacity: 0;
+}

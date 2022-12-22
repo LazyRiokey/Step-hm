@@ -1,0 +1,47 @@
+[
+    {
+        "date": "30.09.2021",
+        "theater": "Theater 1",
+        "concert": [
+            "concert 1",
+            "concert 2",
+            "concert 3"
+        ]
+    },
+    {
+        "date": "30.09.2021",
+        "theater": "Theater 2",
+        "concert": [
+            "concert 3",
+            "concert 4",
+            "concert 5"
+        ]
+    },
+    {
+        "date": "31.09.2021",
+        "theater": "Theater 2",
+        "concert": [
+            "concert 6",
+            "concert 7",
+            "concert 8"
+        ]
+    },
+    {
+        "date": "1.10.2021",
+        "theater": "Theater 3",
+        "concert": [
+            "concert 9",
+            "concert 10",
+            "concert 11"
+        ]
+    },
+    {
+        "date": "1.10.2021",
+        "theater": "Theater 3",
+        "concert": [
+            "concert 12",
+            "concert 13",
+            "concert 14"
+        ]
+    }
+]

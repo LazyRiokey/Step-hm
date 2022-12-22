@@ -1,0 +1,116 @@
+body {
+    background: #59ABE3;
+    margin: 0
+}
+
+.contact_card {
+    display: flexbox;
+    flex-direction: row;
+    margin: 10px 0 0 10px;
+    float:left; 
+    margin: 0 15px 15px 0; 
+    padding: 10px;
+}
+
+
+.base_form, .contact_card {
+    width: 340px;
+    height: 340px;
+    margin: 20px;
+    background: #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 0 40px -10px #000;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.base_form {
+    height: 600px;
+    position: relative;
+}    
+
+
+.base_form, .contact_card , a {
+    margin: 20px;
+}
+
+.info_input {
+    width: 280px;
+    height: 50px;
+    resize: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: Calibri;
+}
+
+h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 280px;
+    color: #78788c;
+    border-bottom: 3px solid #78788c
+}
+
+#id_company, input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s;
+    border-bottom: 2px solid #bebed2
+}
+
+#id_company, input:focus {
+    border-bottom: 2px solid #78788c
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+button {
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    border: 2px solid #78788c;
+    background: 0;
+    color: #5a5a6e;
+    cursor: pointer;
+    transition: all .3s
+}
+
+button:hover {
+    background: #78788c;
+    color: #fff
+}
+
+a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #0f7afc;
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(15, 122, 252, 0.2);
+}
+a:hover {
+    text-decoration: none;
+    color: #cf0000;
+    border-bottom-color: rgba(208, 64, 0, 0.2);
+}
+a:visited {
+    text-decoration: none;
+    color: #800080;
+    border-bottom-color: rgba(128, 0, 128, 0.2);
+}

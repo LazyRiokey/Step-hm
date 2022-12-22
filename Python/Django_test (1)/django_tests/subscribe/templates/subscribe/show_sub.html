@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<h2>Поздравляем с подпиской {{first_name}} {{last_name}}</h2>
+<div class="container">
+    <div class="sub-info">
+        <p>Имя: {{first_name}}</p>
+    </div>
+    <div class="sub-info">
+        <p>Фамилия: {{last_name}}</p>
+    </div>
+    <div class="sub-info">
+        <p>Возраст: {{age}}</p>
+    </div>
+    <div class="sub-info">
+        <p>Пол: {{gender}}</p>
+    </div>
+    <div class="sub-info">
+        <p>Email: {{e_mail}}</p>
+    </div>
+</div>
+
+{% endblock%}

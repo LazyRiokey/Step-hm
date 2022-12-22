@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<form class="base-form" action="{% url 'OrderView' %}" , method="post">
+    {% csrf_token %}
+    <h2>Сделать заказ:</h2>
+
+    {{ form.as_p }}
+
+
+    <button type="submit">Заказать</button>
+
+</form>
+
+{% endblock body %}

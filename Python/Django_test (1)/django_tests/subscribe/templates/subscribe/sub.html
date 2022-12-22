@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <form class="base_form" action="{% url 'subscribe' %}" , method="post">
+        {% csrf_token %}
+        <h2>Подписка на новости:</h2>
+
+
+        {{ form.as_p }}
+
+
+        <button type="submit">Подписаться</button>
+
+    </form>
+
+{% endblock%}

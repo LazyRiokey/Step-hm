@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Карточки клиентов доставки воды:</h2>
+    <hr>
+    <div class="container">
+        {% for item in object_list %}
+        <div class="order-card">
+            <div class="last-name-info">
+                <p class="label">Фамилия: </p>
+                <p>{{item.last_name}}</p>
+            </div>
+            <div class="first-name-info">
+                <p class="label">Имя: </p>
+                <p>{{item.first_name}}</p>
+            </div>
+            <div class="mail-info">
+                <p class="label">E-mail: </p>
+                <p>{{item.e_mail}}</p>
+            </div>
+            <div class="contacts-info">
+                <p class="label">Номер телефона: </p>
+                <p>{{item.contacts}}</p>
+            </div>
+            <div class="address-info">
+                <p class="label">Адрес: </p>
+                <p>{{item.address}}</p>
+            </div>
+            <div class="months-of-delivery-info">
+                <p class="label">Срок месяцев доставки: </p>
+                <p>{{item.months_of_delivery}}</p>
+            </div>
+            <div class="bottle-volume-info">
+                <p class="label">Объём баллона воды: </p>
+                <p>{{item.bottle_volume}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    
+    </div>
+
+{% endblock content %}

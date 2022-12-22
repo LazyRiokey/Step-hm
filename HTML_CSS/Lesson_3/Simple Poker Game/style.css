@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #111;
+    color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.div_main {
+    display: table;
+    width: 100%;
+}
+
+.div_column {
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+}
+
+.div_player {
+    margin-top: 20px;
+}
+
+span {
+    font-size: 30px;
+}
+
+.div_card {
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    background-color: white;
+    margin-top: 20px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 68px;
+    height: 90px;
+}
+
+.black_numbers {
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.red_numbers {
+    color: red;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hr_players {
+    width: 23%;
+}
+
+.player_combination {
+    color: #f4f4f4;
+    margin-top: 10px;
+}
+
+.hr_combinations {
+    width: 60%;
+}
+
+.spades::after {
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+    content: '\2009' '\2660';
+}
+
+.hearts::after {
+    color: red;
+    font-size: 33px;
+    content: '\2009' '\2665';
+}
+
+.diamonds::after {
+    color: red;
+    font-size: 33px;
+    content: '\2009' '\2666';
+}
+
+.clubs::after {
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+    content: '\2009' '\2663';
+}

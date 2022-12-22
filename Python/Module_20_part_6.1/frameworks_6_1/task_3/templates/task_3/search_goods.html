@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% csrf_token %}
+<form class="base-search-form" action="{% url 'GoodsListView' %}" , method="GET">
+    <h2>Поиск товара:</h2>
+
+    {{form.as_p}}
+
+    <button type="submit">Найти</button>
+</form>
+
+{% endblock %}
